@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{8372E6D1-FF68-42A9-874C-5004ED5ECE56}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Wordle PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Wordle/valid-wordle-words.txt">
+    <Files>
+      <File FileName="Wordle/Program.cs" Line="5" Column="40" />
+      <File FileName="Wordle/valid-wordle-words.txt" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Wordle" expanded="True">
+            <Node name="Wordle" expanded="True">
+              <Node name="valid-wordle-words.txt" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

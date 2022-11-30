@@ -12,3 +12,17 @@
 /Users/elvisekman/Projects/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.dll
 /Users/elvisekman/Projects/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.pdb
 /Users/elvisekman/Projects/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.genruntimeconfig.cache
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.csproj.AssemblyReference.cache
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.GeneratedMSBuildEditorConfig.editorconfig
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.AssemblyInfoInputs.cache
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.AssemblyInfo.cs
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.csproj.CoreCompileInputs.cache
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.dll
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.pdb
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/bin/Debug/netcoreapp3.1/Wordle
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/bin/Debug/netcoreapp3.1/Wordle.deps.json
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/bin/Debug/netcoreapp3.1/Wordle.runtimeconfig.json
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/bin/Debug/netcoreapp3.1/Wordle.runtimeconfig.dev.json
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/bin/Debug/netcoreapp3.1/Wordle.dll
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/bin/Debug/netcoreapp3.1/Wordle.pdb
+/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/Debug/netcoreapp3.1/Wordle.genruntimeconfig.cache

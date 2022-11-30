@@ -25,8 +25,9 @@ namespace Wordle
             AvailableTries = tries;
         }
 
-        public void CheckWord(string guessedWord)
+        public List<char[]> CheckWord(string guessedWord)
         {
+
             throw new NotImplementedException("Have not implemented code for the check word method");
         }
     }

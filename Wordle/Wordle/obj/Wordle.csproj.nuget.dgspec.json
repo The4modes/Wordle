@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/elvisekman/Projects/Wordle/Wordle/Wordle.csproj": {}
+    "/Users/elvisekman/Projects/Wordle/Wordle/Wordle/Wordle.csproj": {}
   },
   "projects": {
-    "/Users/elvisekman/Projects/Wordle/Wordle/Wordle.csproj": {
+    "/Users/elvisekman/Projects/Wordle/Wordle/Wordle/Wordle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/elvisekman/Projects/Wordle/Wordle/Wordle.csproj",
+        "projectUniqueName": "/Users/elvisekman/Projects/Wordle/Wordle/Wordle/Wordle.csproj",
         "projectName": "Wordle",
-        "projectPath": "/Users/elvisekman/Projects/Wordle/Wordle/Wordle.csproj",
+        "projectPath": "/Users/elvisekman/Projects/Wordle/Wordle/Wordle/Wordle.csproj",
         "packagesPath": "/Users/elvisekman/.nuget/packages/",
-        "outputPath": "/Users/elvisekman/Projects/Wordle/Wordle/obj/",
+        "outputPath": "/Users/elvisekman/Projects/Wordle/Wordle/Wordle/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/elvisekman/.nuget/NuGet/NuGet.Config"

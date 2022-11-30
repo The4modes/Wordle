@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tKgHSzUv/KVcbGfDiy/Xq2RY4H708VMqO0QDn84QtniCbTaCsa71PsRBgdG5/XBLHH23ITZRo3h4NmW61PsqIA==",
+  "dgSpecHash": "ksQNuTvHwecH39v3Wyk66GYe0AQ8cYCpaJasVK/6fiPcFI1f4Y/WFP69f7Hm0kdd6ZpirgmjikM1x0qMwzSrBA==",
   "success": true,
-  "projectFilePath": "/Users/elvisekman/Projects/Wordle/Wordle/Wordle.csproj",
+  "projectFilePath": "/Users/elvisekman/Projects/Wordle/Wordle/Wordle/Wordle.csproj",
   "expectedPackageFiles": [
     "/Users/elvisekman/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
     "/Users/elvisekman/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.31/microsoft.netcore.app.host.osx-x64.3.1.31.nupkg.sha512",

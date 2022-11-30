@@ -21,6 +21,14 @@ namespace Wordle
             return result;
         }
 
+        public List<char[]> CheckWord(string guessedWord)
+        {
+
+            throw new NotImplementedException();
+
+
+        }
+
         public static void DisplayColors(List<char[]> colors)
         {
             foreach (char[] letter in colors)
