@@ -5,31 +5,34 @@ namespace Wordle
 {
     abstract class Word : IWord
     {
-        public string HiddenWord { get; set; }
-        public List<string> AvailableWords { get; set; } = new List<string>();
+        public string HiddenWord { get; protected set; }
+        public List<string> AvailableWords { get; protected set; } = new List<string>();
 
-
-        public void CheckWord(string guessedWord)
+        public virtual List<char[]> CheckWord(WordHandler wordHandler)
         {
+            string guess = wordHandler.GuessWord();
+
             List<char[]> strings = new List<char[]>();
 
-            //for (int i = 0; i < guessedWord.Length; i++)
-            //{
-            //    char[] chars = new char[2];
+            for (int i = 0; i < guess.Length; i++)
+            {
+                char[] chars = new char[2];
+                chars[0] = guess[i];
 
-            //    chars[0] = guessedWord[i];
+                if (HiddenWord.Contains(guess[i]))
+                {
+                    wordHandler.Alphabet[chars[0]] = 'y';
+                    chars[1] = 'y';
+                }
+                else
+                {
+                    chars[1] = 'b';
+                }
 
-            //    if (guessedWord[i] == HiddenWord[i])
-            //    {
-                    
-            //        'g';
-            //    }
+                strings.Add(chars);
+            }
 
-            //    strings.Add(chars);
-            //}
-            
-
-            throw new NotImplementedException();
+            return strings;
         }
 
         protected void GenerateWord()

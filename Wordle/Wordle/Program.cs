@@ -1,19 +1,28 @@
 ﻿using System;
-
 namespace Wordle
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
-            //WordHandler wordHandler = new WordHandler(UserHandler.GetTries());
+            IWord word = GameHandler.ChooseMode(new string[] { "wordle", "animals" });
 
-            Word word = new Wordle();
-            Word animal = new AnimalWord();
+            int guesses = UserHandler.GetTries();
 
-            Console.WriteLine(word.HiddenWord);
-            Console.WriteLine(animal.HiddenWord);
+            WordHandler wordHandler;
 
+            if (guesses > 5)
+            {
+                wordHandler = new WordHandler(word, guesses);
+            }
+            else
+            {
+                wordHandler = new WordHandler(word);
+            }
+
+            GameHandler gameHandler = new GameHandler(wordHandler, word);
+
+            gameHandler.RunGame();
         }
     }
 }

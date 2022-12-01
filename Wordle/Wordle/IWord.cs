@@ -4,10 +4,10 @@ namespace Wordle
 {
     interface IWord
     {
-        public string HiddenWord { get; set; }
-        public List<string> AvailableWords { get; set; }
+        public string HiddenWord { get;}
+        public List<string> AvailableWords { get;}
 
-        public void CheckWord(string guessedWord);
+        public List<char[]> CheckWord(WordHandler wordHandler);
 
     }
 

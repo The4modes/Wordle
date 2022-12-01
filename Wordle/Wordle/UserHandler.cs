@@ -7,26 +7,29 @@ namespace Wordle
     {
         public static int GetTries()
         {
-            Console.WriteLine("Write the amount of tries you want to have\n" +
-                "The number of tries need to be more than 3");
+            Console.WriteLine("Do you want more than 5 guesses?");
+
+            if(Console.ReadLine().ToLower() == "yes")
+            {
+                return GetTries(5);
+            }
+            
+            return 5;
+        }
+
+        private static int GetTries(int minimumTries)
+        {
+            Console.WriteLine("How many guesses do you want to have?\n minimum is 5.");
 
             int result;
 
-            while(!int.TryParse(Console.ReadLine(), out result) || result < 3)
+            while (!int.TryParse(Console.ReadLine(), out result) || result < minimumTries)
             {
                 Console.Clear();
                 Console.WriteLine("Not a legal number");
             }
-            
+
             return result;
-        }
-
-        public List<char[]> CheckWord(string guessedWord)
-        {
-
-            throw new NotImplementedException();
-
-
         }
 
         public static void DisplayColors(List<char[]> colors)
@@ -43,10 +46,14 @@ namespace Wordle
                     Console.BackgroundColor = ConsoleColor.DarkYellow;
                     Console.Write(letter[0]);
                 }
+                else if (letter[1] == 'b')
+                {
+                    Console.BackgroundColor = ConsoleColor.Black;
+                    Console.Write(letter[0]);
+                }
                 else
                 {
-                    Console.BackgroundColor = ConsoleColor.Gray;
-                    Console.Write(letter[0]);
+                    throw new Exception("A color for the charachter was never assigned");
                 }
 
                 Console.ResetColor();

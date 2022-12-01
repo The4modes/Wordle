@@ -7,14 +7,16 @@ namespace Wordle
 {
     class AnimalWord : Word
     {
-
         public AnimalWord()
         {
             AvailableWords = File.ReadAllLines(Path.GetFullPath(@"../../../animals.txt")).ToList<string>();
-            GenerateWord();
 
-            
-            
+            for (int i = 0; i < AvailableWords.Count; i++)
+            {
+                AvailableWords[i] = AvailableWords[i].ToLower();
+            }
+
+            GenerateWord();
         }
     }
 

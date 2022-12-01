@@ -11,24 +11,52 @@ namespace Wordle
 
         public int GuessCount { get; set; }
 
-        private int AvailableTries { get; set; }
+        public int AvailableTries { get; set; } = 5;
 
-        public WordHandler()
+        public Dictionary<char, char> Alphabet { get; set; } = new Dictionary<char, char>();
+
+        public WordHandler(IWord word)
         {
-            AvailableTries = 6;
+            Word = word;
+
             GuessCount = 0;
             GuessedWords = new List<string>();
+
+            char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToLower().ToCharArray();
+            foreach (char character in alpha)
+            {
+                Alphabet.Add(character, 'b');
+            }
         }
 
-        public WordHandler(int tries) :this()
+        public WordHandler(IWord word, int tries) : this(word)
         {
             AvailableTries = tries;
         }
 
-        public List<char[]> CheckWord(string guessedWord)
+        public string GuessWord()
         {
+            Console.WriteLine($"The Hidden word is a {Word.HiddenWord.Length} letter word");
 
-            throw new NotImplementedException("Have not implemented code for the check word method");
+            string guess = string.Empty;
+
+            do
+            {
+                guess = Console.ReadLine();
+
+                if (!Word.AvailableWords.Contains(guess.ToLower()))
+                {
+                    Console.WriteLine("Please guess a valid word.");
+                }
+            }
+            while (!Word.AvailableWords.Contains(guess.ToLower()));
+
+            Word.AvailableWords.Remove(guess.ToLower());
+            guess = guess.ToLower();
+            GuessCount++;
+            GuessedWords.Add(guess);
+
+            return guess;
         }
     }
 
